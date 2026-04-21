@@ -1,29 +1,59 @@
 <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>DeductIt Status</title>
-    <meta name="robots" content="noindex">
-    <style>
-      body{font-family:-apple-system,system-ui,sans-serif;max-width:600px;margin:60px auto;padding:0
-  24px;line-height:1.6;color:#1a1a1a;}
-      h1{font-size:26px;}
-      .banner{background:#fef3c7;border-left:4px solid #f59e0b;padding:14px 18px;border-radius:6px;margin:20px 0;}
-      .meta{color:#6b7280;font-size:13px;}
-      a{color:#2563eb;}
-    </style>
-  </head>
-  <body>
-    <h1>DeductIt — Service Status</h1>
-    <p class="meta">Updated: April 21, 2026</p>
-    <div class="banner">
-      <strong>⚠️ Service interruption</strong>
-      <p style="margin:6px 0 0">DeductIt is currently experiencing a service interruption that may prevent new sign-ins. We're working
-   to restore service.</p>
-    </div>
-    <p>If you're already signed in, the app continues to work normally. Your data is safe and unaffected.</p>
-    <p>For help, email <a href="mailto:support@foothill.ai">support@foothill.ai</a>.</p>
-    <p class="meta" style="margin-top:40px">Foothill AI LLC</p>
-  </body>
-  </html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DeductIt Status</title>
+  <meta name="robots" content="noindex">
+  <style>
+    body{font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:60px auto;padding:0 24px;line-height:1.6;color:#1a1a1a;}
+    h1{font-size:26px;margin-bottom:6px;}
+    h2{font-size:18px;margin-top:28px;}
+    .banner{background:#fef3c7;border-left:4px solid #f59e0b;padding:14px 18px;border-radius:6px;margin:20px 0;}
+    .meta{color:#6b7280;font-size:13px;}
+    a{color:#2563eb;}
+    ul{padding-left:20px;}
+    li{margin:4px 0;}
+  </style>
+</head>
+<body>
+  <h1>DeductIt — Service Status</h1>
+  <p class="meta">Updated: April 21, 2026</p>
+
+  <div class="banner">
+    <strong>⚠️ Service interruption</strong>
+    <p style="margin:6px 0 0">DeductIt is currently experiencing a service interruption affecting sign-in and data sync. We're working to restore service.</p>
+  </div>
+
+  <h2>What's happening</h2>
+  <p>Our cloud hosting provider (Google Firebase) is experiencing an unexpected service disruption affecting our account that began in the early morning of April 21. This is affecting sign-in and data sync in the app and on deductit.io. We've been in direct contact with their engineering team throughout the day, and we've paid for expedited Google Cloud support to shorten resolution. Current estimated timeline to full restoration is 1&ndash;3 business days.</p>
+
+  <h2>What this means for you</h2>
+  <ul>
+    <li>Your data is safe. Nothing has been lost.</li>
+    <li>If you're already signed in on iOS or Android, the app should continue to work offline — you can view your donations and export them as PDF, CSV, or TurboTax (TXF) from the Reports screen.</li>
+    <li>New sign-ins and live data sync are temporarily unavailable.</li>
+  </ul>
+
+  <h2>What we're doing</h2>
+  <ul>
+    <li>Escalating directly with Google's Trust &amp; Safety team to expedite resolution.</li>
+    <li>Posting updates here at <a href="https://status.foothill.ai">status.foothill.ai</a>.</li>
+    <li>Emailing all subscribers the moment service is fully restored.</li>
+  </ul>
+
+  <h2>What we're committing to next</h2>
+  <p>We had identified a contingency plan for exactly this type of single-provider outage — a multi-provider backup architecture that would have kept the service running through today's interruption. The plan was written but not yet deployed. Deploying it in full is our top priority the moment service is restored, so that an event like this cannot cause this level of impact again.</p>
+
+  <h2>Need urgent help before Google restores service?</h2>
+  <p>If you have an IRS deadline this week or otherwise can't wait:</p>
+  <ul>
+    <li>If you use the iOS or Android app and are already signed in: open the app and go to Reports → Export. Your previously-loaded donations are cached locally and can be exported to PDF, CSV, or TXF even while the service is unavailable.</li>
+    <li>If you don't have the app installed, or you only use deductit.io on the web: email <a href="mailto:support@foothill.ai">support@foothill.ai</a> with what you need, we'll work with you directly.</li>
+  </ul>
+
+  <p>We're sorry for the disruption. Thank you for your patience.</p>
+
+  <p class="meta" style="margin-top:40px">Foothill AI LLC · <a href="mailto:support@foothill.ai">support@foothill.ai</a></p>
+</body>
+</html>
