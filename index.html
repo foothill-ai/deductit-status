@@ -6,40 +6,51 @@
   <title>DeductIt Status</title>
   <meta name="robots" content="noindex">
   <style>
-    body{font-family:-apple-system,system-ui,sans-serif;max-width:680px;margin:60px auto;padding:0 24px;line-height:1.6;color:#1a1a1a;}
+    body{font-family:-apple-system,system-ui,sans-serif;max-width:760px;margin:60px auto;padding:0 24px;line-height:1.6;color:#1a1a1a;}
     h1{font-size:26px;margin-bottom:6px;}
     h2{font-size:18px;margin-top:28px;}
     .banner{background:#dcfce7;border-left:4px solid #16a34a;padding:14px 18px;border-radius:6px;margin:20px 0;}
+    .status-list{border:1px solid #e5e7eb;border-radius:8px;margin:18px 0;padding:0;list-style:none;}
+    .status-list li{display:flex;justify-content:space-between;gap:16px;margin:0;padding:12px 16px;border-top:1px solid #e5e7eb;}
+    .status-list li:first-child{border-top:0;}
+    .ok{color:#15803d;font-weight:600;white-space:nowrap;}
     .meta{color:#6b7280;font-size:13px;}
+    details{border:1px solid #e5e7eb;border-radius:8px;padding:12px 16px;margin:12px 0;}
+    summary{cursor:pointer;font-weight:600;}
     a{color:#2563eb;}
     ul{padding-left:20px;}
     li{margin:4px 0;}
   </style>
 </head>
 <body>
-  <h1>DeductIt — Service Status</h1>
-  <p class="meta">Updated: April 22, 2026 &mdash; 3:00 AM PDT</p>
+  <h1>DeductIt &mdash; Service Status</h1>
+  <p class="meta">Updated: June 14, 2026 &mdash; 9:20 PM PDT</p>
 
   <div class="banner">
-    <strong>✅ Service restored</strong>
-    <p style="margin:6px 0 0">As of 2:58 AM PDT on April 22, 2026, DeductIt is fully back online. Sign-in, data sync, and all app features are operating normally on iOS, Android, and the web at <a href="https://deductit.io">deductit.io</a>.</p>
+    <strong>All systems operational</strong>
+    <p style="margin:6px 0 0">DeductIt sign-in, data sync, and app features are operating normally on iOS, Android, and the web at <a href="https://deductit.io">deductit.io</a>.</p>
   </div>
 
-  <h2>What happened</h2>
-  <p>Starting in the early morning of April 21, our cloud hosting provider (Google Firebase) suspended the account that powers DeductIt, which took sign-in and data sync offline for roughly 24 hours. We have not yet received an adequate explanation from Google for the interruption, and we are continuing to pursue one.</p>
-
-  <h2>Your data</h2>
-  <p>Your data is safe. No donation records were lost during the interruption.</p>
-
-  <h2>What we're focused on now</h2>
-  <ul>
-    <li><strong>Post-mortem.</strong> We're conducting a full review of the incident — what happened, why it went undetected, and what we should have had in place to prevent it.</li>
-    <li><strong>Robust fallback strategy.</strong> We're prioritizing a multi-provider backup architecture so that a single-provider disruption can never again take the service offline at this scale. This work is our top engineering priority until it ships.</li>
-    <li><strong>Continued pressure on Google</strong> for a complete explanation of the root cause on their side.</li>
+  <h2>Current status</h2>
+  <ul class="status-list">
+    <li><span>iOS app</span><span class="ok">Operational</span></li>
+    <li><span>Android app</span><span class="ok">Operational</span></li>
+    <li><span>Web app</span><span class="ok">Operational</span></li>
+    <li><span>Sign-in and account data</span><span class="ok">Operational</span></li>
+    <li><span>Donation sync and receipt photos</span><span class="ok">Operational</span></li>
+    <li><span>Charity lookup and exports</span><span class="ok">Operational</span></li>
   </ul>
 
-  <p>Thank you for your patience through yesterday's disruption. If you ran into any issue that isn't resolved now that service is back, please email <a href="mailto:support@foothill.ai">support@foothill.ai</a> and we'll work with you directly.</p>
+  <p>If you are seeing a problem while this page is green, please email <a href="mailto:support@foothill.ai">support@foothill.ai</a> with your platform and the approximate time it happened.</p>
 
-  <p class="meta" style="margin-top:40px">Foothill AI LLC · <a href="mailto:support@foothill.ai">support@foothill.ai</a></p>
+  <h2>Past incidents</h2>
+  <details>
+    <summary>April 21&ndash;22, 2026: Firebase account suspension</summary>
+    <p class="meta">Resolved: April 22, 2026 &mdash; 2:58 AM PDT</p>
+    <p>Starting in the early morning of April 21, our cloud hosting provider (Google Firebase) suspended the account that powers DeductIt, which took sign-in and data sync offline for roughly 24 hours. Service was restored on April 22, and no donation records were lost.</p>
+    <p>After the incident, we prioritized stronger fallback and disaster-recovery work so a single-provider disruption is less likely to take DeductIt offline at this scale again.</p>
+  </details>
+
+  <p class="meta" style="margin-top:40px">Foothill AI LLC &middot; <a href="mailto:support@foothill.ai">support@foothill.ai</a></p>
 </body>
 </html>
